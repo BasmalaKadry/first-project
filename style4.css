@@ -1,0 +1,389 @@
+*{
+    /*نوع من انواع الخطوط تم استخدامه حتي ننسق الصفحه كلها و يكون الخط واحد*/
+    font-family: "Roboto" ,sans-serif ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    /*لجعل الخط كابيتال*/
+    text-transform: capitalize;
+    /* استخدمنا 
+    linear علشان السرعه ك بديل او مثل 
+    ease out و ease in 
+    في transuthion-timing-functiln*/
+    transition: .7s linear;
+}
+
+
+/*1rem = 15px*/
+
+
+html{
+    font-size: 67.5%;
+    overflow-x: hidden;
+}
+
+
+body{
+    background-color: black;
+    color: #fff;
+}
+
+
+.header{
+    display: flex;
+    align-items: center; 
+    /*لعمل مسافه */
+    justify-content: space-between;
+    /*البادينج للصوره*/
+    padding: 1.5rem 7%;
+    position: fixed;
+    /* للكلام الهوم و غيره ال 6*/
+    top: 0;
+    left: 0;
+    right: 0;
+    /*علشان اخلي طبقه ال nav  فوق الكل */
+    z-index: 1000;
+    background-color: black;
+}
+
+
+.header .logo img{
+    height: 6rem;
+}
+
+
+.header .navbar a{
+    margin: 0 1.5rem;
+    font-size: 1.5rem;
+}
+
+
+.header .navbar a:hover{
+    color:gold;
+    border-bottom: .2rem solid gold;
+    padding-bottom: .3rem;
+}
+
+
+.home{
+    /*ال vh وحده قياس و تعني ان ياخد علي شكل هاتف او لاب او تاب العميل*/
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(img/9\ Photos\ For\ Your\ Coffee\ Break_\ Tim\ Hoffesommer\ shot\ the\ popular\ hot\ drink.jpeg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.home .content{
+    max-width: 68rem;
+}
+
+
+.home .content p{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: lighter;
+    padding: 1rem 0;
+}
+
+
+.home .content h3{
+    font-size: 6rem;
+    /*لجعل الكلمه كلها كابيتال*/
+    text-transform: uppercase;
+    /*لعمل مسافه */
+    line-height: 1.2;
+    /*لتخفيف الخط*/
+    font-weight: lighter;
+    padding: 1rem 0;
+}
+
+
+section{
+    /*لابعاد الكلام عن الصفحه*/
+    padding: 2rem 5%;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: white;
+    padding: 1rem 2rem;
+    color: black;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+}
+
+
+.btn:hover{
+    letter-spacing: .5rem;
+}
+
+
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 6rem;
+    font-size: 4rem;
+}
+
+
+/* .heading span{
+    color:cornflowerblue ;
+} */
+
+                                                    /* about */
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.about .row .imag{
+    flex: 1 1 45rem;
+}
+
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 4rem;
+}
+
+
+.about .row .content h3{
+    font-size: 3rem;
+}
+
+
+.about .row .content p{
+    padding: 1rem 0;
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+
+
+.about .row .imag img{
+    width: 100%;
+}
+
+
+.header .navbar:hover{
+    height: 10rem;
+    background-color: black;
+}
+
+                                                   /* menu */
+
+.menu .box-conatiner{
+    /*لتفعيل ال جريد*/
+    display: grid;
+    /*لظبط الصوره و الكلام*/
+    grid-template-columns: repeat(auto-fit , minmax(30rem, 1fr));
+    /*لعمل مسافه*/
+    gap: 2.5rem;
+}
+
+
+.menu .box-conatiner .box{
+    padding: 5rem;
+    /*لعمل الكلام في النصف*/
+    text-align: center;
+    
+}
+
+
+.menu .box-conatiner .box img{
+    height: 10rem;
+}
+
+
+.menu .box-conatiner .box h3{
+    font-size: 2rem;
+    /* لعمل مسافه من التوب و البوتوم*/
+    padding: 1rem 0;
+}
+
+
+.menu .box-conatiner .box .price{
+    font-size:2rem ;
+    padding: .5rem 0;
+}
+
+
+.menu .box-conatiner .box .price span{
+    font-size: 2rem;
+    /*للشطب علي الكلمه*/
+    text-decoration: line-through;
+}
+
+
+.menu .box-conatiner .box:hover{
+    color: black;
+    background-color: #fff;
+    /*لجعله مثل الدائره*/
+    border-radius: 15rem;
+}
+
+
+.menu .box-conatiner .btn:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+                                                     /* produts */
+
+.produts .box-conatiner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(30rem, 1fr));
+    gap: 2.5rem;
+
+}
+
+
+.produts .box-conatiner .box{
+    text-align: center;
+    padding: 2rem;
+
+}
+
+
+.produts .box-conatiner .box image{
+    padding: 2.5ram 0;
+}
+
+
+.produts .box-conatiner .box image img{
+    height: 25rem;
+}
+
+
+.produts .box-conatiner .box .content h3{
+    font-size: 2rem;
+}
+
+
+.produts .box-conatiner .box .content .price{
+    font-size: 2rem;
+}
+
+
+.produts .box-conatiner .box .content .price span{
+    text-decoration: line-through;
+    font-size: 1.5rem;
+}
+
+                                                        /* review */
+
+.review .box-conatiner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(30rem, 1fr));
+    gap: 2.5rem;
+} 
+
+
+.review .box-conatiner .box{
+    text-align: center;
+    padding: 2rem 3rem;
+}
+
+
+.review .box-conatiner .box p{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+
+.review .box-conatiner .box .user{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+
+.review .box-conatiner .box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+
+
+                                                            /* contact */
+
+.contact .row{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+}                                                            
+
+
+.contact .row .map{
+   /* flex-grow: ; flex-shrink: ; flex-basis: ; */
+    flex: 1 1 45rem;
+}
+
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+
+.contact .row form h3{
+    font-size: 3rem;
+}
+
+
+.contact .row form .inputb{
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    border-bottom: 1px solid #fff;
+    border-radius: 2rem;
+}
+
+
+.contact .row form .inputb input{
+    width: 100%;
+    padding: 2rem;
+    background: none;
+    color: #fff;
+}
+
+                                                             /* blogs */
+
+.blogs .contanr .content{
+    text-align: center;
+    padding: 2rem 3rem;
+}
+
+
+
+.blogs .contanr .content h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}  
+
+
+.blogs .contanr .content p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+
+.blogs .contanr { 
+    gap: 2.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(30rem, 1fr));
+}
+
+
